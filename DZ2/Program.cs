@@ -61,7 +61,12 @@ namespace DZ2_1
             do
             {
                 Console.Write("Введите размер квадратной матрицы: ");
-                int arraySize = int.Parse(Console.ReadLine());
+                int arraySize;
+                while (!int.TryParse(Console.ReadLine(), out arraySize))
+                {
+                    Console.WriteLine("Число имеет неверный формат!");
+                    Console.Write("Введите размер квадратной матрицы снова: ");
+                }
 
                 bool checkSymmetry = true;
                 double[,] array = new double[arraySize, arraySize];
@@ -71,14 +76,17 @@ namespace DZ2_1
                     for (int counterJ = 0; counterJ < arraySize; counterJ++)
                     {
                         Console.Write($"array[{counterI},{counterJ}] = ");
-                        array[counterI, counterJ] = double.Parse(Console.ReadLine());
+                        while (!double.TryParse(Console.ReadLine(), out array[counterI, counterJ]))
+                        {
+                            Console.Write("Число имеет неверный формат! Введите его снова: ");
+                        }
                     }
                     Console.WriteLine();
                 }
 
                 for (int counterI = 0; counterI < arraySize; counterI++)
                 {
-                    for (int counterJ = counterI+1; counterJ < arraySize; counterJ++)
+                    for (int counterJ = counterI + 1; counterJ < arraySize; counterJ++)
                     {
                         if (array[counterI, counterJ] != array[counterJ, counterI])
                         {

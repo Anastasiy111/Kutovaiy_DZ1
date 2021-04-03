@@ -42,7 +42,7 @@ namespace DZ2_1
                     Console.WriteLine();
                     Console.WriteLine();
                 }
-                else 
+                else
                 {
                     Console.Write("Желаете продолжить? (да - нажмите Enter, нет - нажмите на любую клавишу): ");
                     Console.WriteLine();
@@ -51,6 +51,10 @@ namespace DZ2_1
 
             } while (Console.ReadKey().Key == ConsoleKey.Enter);
         }
+
+
+
+
 
         static void symmetricArray() // Сложность алгоритма: O(n2)+O(n2)=O(n2)
         {
@@ -74,15 +78,18 @@ namespace DZ2_1
 
                 for (int counterI = 0; counterI < arraySize; counterI++)
                 {
-                    for (int counterJ = 0; counterJ < arraySize - counterI; counterJ++)
+                    for (int counterJ = counterI+1; counterJ < arraySize; counterJ++)
                     {
-                        counterJ += counterI;
                         if (array[counterI, counterJ] != array[counterJ, counterI])
                         {
                             checkSymmetry = false;
                             break;
                         }
+                    }
 
+                    if (checkSymmetry == false)
+                    {
+                        break;
                     }
                 }
 
@@ -101,6 +108,10 @@ namespace DZ2_1
 
             } while (Console.ReadKey().Key == ConsoleKey.Enter);
         }
+
+
+
+
 
         static void Main(string[] args)
         {

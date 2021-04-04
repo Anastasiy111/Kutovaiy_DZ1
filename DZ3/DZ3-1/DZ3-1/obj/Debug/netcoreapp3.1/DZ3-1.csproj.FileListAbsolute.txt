@@ -11,3 +11,16 @@ C:\GoodLine\DZ3-1\DZ3-1\obj\Debug\netcoreapp3.1\DZ3-1.csproj.CoreCompileInputs.c
 C:\GoodLine\DZ3-1\DZ3-1\obj\Debug\netcoreapp3.1\DZ3-1.dll
 C:\GoodLine\DZ3-1\DZ3-1\obj\Debug\netcoreapp3.1\DZ3-1.pdb
 C:\GoodLine\DZ3-1\DZ3-1\obj\Debug\netcoreapp3.1\DZ3-1.genruntimeconfig.cache
+C:\GoodLine\Kutovaiy_DZ1\DZ3\DZ3-1\DZ3-1\bin\Debug\netcoreapp3.1\DZ3-1.exe
+C:\GoodLine\Kutovaiy_DZ1\DZ3\DZ3-1\DZ3-1\bin\Debug\netcoreapp3.1\DZ3-1.deps.json
+C:\GoodLine\Kutovaiy_DZ1\DZ3\DZ3-1\DZ3-1\bin\Debug\netcoreapp3.1\DZ3-1.runtimeconfig.json
+C:\GoodLine\Kutovaiy_DZ1\DZ3\DZ3-1\DZ3-1\bin\Debug\netcoreapp3.1\DZ3-1.runtimeconfig.dev.json
+C:\GoodLine\Kutovaiy_DZ1\DZ3\DZ3-1\DZ3-1\bin\Debug\netcoreapp3.1\DZ3-1.dll
+C:\GoodLine\Kutovaiy_DZ1\DZ3\DZ3-1\DZ3-1\bin\Debug\netcoreapp3.1\DZ3-1.pdb
+C:\GoodLine\Kutovaiy_DZ1\DZ3\DZ3-1\DZ3-1\obj\Debug\netcoreapp3.1\DZ3-1.csprojAssemblyReference.cache
+C:\GoodLine\Kutovaiy_DZ1\DZ3\DZ3-1\DZ3-1\obj\Debug\netcoreapp3.1\DZ3-1.AssemblyInfoInputs.cache
+C:\GoodLine\Kutovaiy_DZ1\DZ3\DZ3-1\DZ3-1\obj\Debug\netcoreapp3.1\DZ3-1.AssemblyInfo.cs
+C:\GoodLine\Kutovaiy_DZ1\DZ3\DZ3-1\DZ3-1\obj\Debug\netcoreapp3.1\DZ3-1.csproj.CoreCompileInputs.cache
+C:\GoodLine\Kutovaiy_DZ1\DZ3\DZ3-1\DZ3-1\obj\Debug\netcoreapp3.1\DZ3-1.dll
+C:\GoodLine\Kutovaiy_DZ1\DZ3\DZ3-1\DZ3-1\obj\Debug\netcoreapp3.1\DZ3-1.pdb
+C:\GoodLine\Kutovaiy_DZ1\DZ3\DZ3-1\DZ3-1\obj\Debug\netcoreapp3.1\DZ3-1.genruntimeconfig.cache

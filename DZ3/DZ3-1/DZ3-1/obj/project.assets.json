@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Anastasion\\source\\repos\\DZ3-1\\DZ3-1\\DZ3-1.csproj",
+      "projectUniqueName": "C:\\GoodLine\\DZ3-1\\DZ3-1\\DZ3-1.csproj",
       "projectName": "DZ3-1",
-      "projectPath": "C:\\Users\\Anastasion\\source\\repos\\DZ3-1\\DZ3-1\\DZ3-1.csproj",
+      "projectPath": "C:\\GoodLine\\DZ3-1\\DZ3-1\\DZ3-1.csproj",
       "packagesPath": "C:\\Users\\Anastasion\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Anastasion\\source\\repos\\DZ3-1\\DZ3-1\\obj\\",
+      "outputPath": "C:\\GoodLine\\DZ3-1\\DZ3-1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Anastasion\\AppData\\Roaming\\NuGet\\NuGet.Config",

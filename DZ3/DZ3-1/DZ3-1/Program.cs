@@ -7,16 +7,16 @@ namespace DZ3_1
     {
         static public void Mail()
         {
-            Console.WriteLine("Очерьдь в почтовом отделении.");
+            Console.Write("Очерьдь в почтовом отделении.");
             Console.WriteLine();
 
-            Console.WriteLine("Введите время работы почты (в минутах): ");
+            Console.Write("Введите время работы почты (в минутах): ");
             int workTimeMail = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Введите число посетителей, желающих хабрать посылку: ");
+            Console.Write("Введите количество посетителей, желающих забрать посылку: ");
             int visitorsMail = int.Parse(Console.ReadLine());
 
-            if (visitorsMail != 0)
+            if ((visitorsMail != 0) & (workTimeMail != 0))
             {
                 Queue<int> timeServicesVisitirsMail = new Queue<int>();
                 int counterVisitor = 1;
@@ -32,6 +32,10 @@ namespace DZ3_1
                     }
                 }
                 Console.WriteLine($"{timeServicesVisitirsMail.Count} посетителей уйдут без посылки.");
+            }
+            else if ((visitorsMail != 0) & (workTimeMail == 0))
+            {
+                Console.WriteLine($"{visitorsMail} посетителей уйдут без посылки.");
             }
             else
             {

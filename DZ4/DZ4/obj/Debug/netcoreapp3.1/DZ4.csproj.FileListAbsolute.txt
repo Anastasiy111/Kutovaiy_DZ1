@@ -1,0 +1,13 @@
+C:\Users\Anastasion\source\repos\DZ4\DZ4\bin\Debug\netcoreapp3.1\DZ4.exe
+C:\Users\Anastasion\source\repos\DZ4\DZ4\bin\Debug\netcoreapp3.1\DZ4.deps.json
+C:\Users\Anastasion\source\repos\DZ4\DZ4\bin\Debug\netcoreapp3.1\DZ4.runtimeconfig.json
+C:\Users\Anastasion\source\repos\DZ4\DZ4\bin\Debug\netcoreapp3.1\DZ4.runtimeconfig.dev.json
+C:\Users\Anastasion\source\repos\DZ4\DZ4\bin\Debug\netcoreapp3.1\DZ4.dll
+C:\Users\Anastasion\source\repos\DZ4\DZ4\bin\Debug\netcoreapp3.1\DZ4.pdb
+C:\Users\Anastasion\source\repos\DZ4\DZ4\obj\Debug\netcoreapp3.1\DZ4.csprojAssemblyReference.cache
+C:\Users\Anastasion\source\repos\DZ4\DZ4\obj\Debug\netcoreapp3.1\DZ4.AssemblyInfoInputs.cache
+C:\Users\Anastasion\source\repos\DZ4\DZ4\obj\Debug\netcoreapp3.1\DZ4.AssemblyInfo.cs
+C:\Users\Anastasion\source\repos\DZ4\DZ4\obj\Debug\netcoreapp3.1\DZ4.csproj.CoreCompileInputs.cache
+C:\Users\Anastasion\source\repos\DZ4\DZ4\obj\Debug\netcoreapp3.1\DZ4.dll
+C:\Users\Anastasion\source\repos\DZ4\DZ4\obj\Debug\netcoreapp3.1\DZ4.pdb
+C:\Users\Anastasion\source\repos\DZ4\DZ4\obj\Debug\netcoreapp3.1\DZ4.genruntimeconfig.cache

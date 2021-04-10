@@ -1,0 +1,13 @@
+C:\GoodLine\MovieTheaterPoster\MovieTheaterPoster\bin\Debug\netcoreapp3.1\MovieTheaterPoster.exe
+C:\GoodLine\MovieTheaterPoster\MovieTheaterPoster\bin\Debug\netcoreapp3.1\MovieTheaterPoster.deps.json
+C:\GoodLine\MovieTheaterPoster\MovieTheaterPoster\bin\Debug\netcoreapp3.1\MovieTheaterPoster.runtimeconfig.json
+C:\GoodLine\MovieTheaterPoster\MovieTheaterPoster\bin\Debug\netcoreapp3.1\MovieTheaterPoster.runtimeconfig.dev.json
+C:\GoodLine\MovieTheaterPoster\MovieTheaterPoster\bin\Debug\netcoreapp3.1\MovieTheaterPoster.dll
+C:\GoodLine\MovieTheaterPoster\MovieTheaterPoster\bin\Debug\netcoreapp3.1\MovieTheaterPoster.pdb
+C:\GoodLine\MovieTheaterPoster\MovieTheaterPoster\obj\Debug\netcoreapp3.1\MovieTheaterPoster.csprojAssemblyReference.cache
+C:\GoodLine\MovieTheaterPoster\MovieTheaterPoster\obj\Debug\netcoreapp3.1\MovieTheaterPoster.AssemblyInfoInputs.cache
+C:\GoodLine\MovieTheaterPoster\MovieTheaterPoster\obj\Debug\netcoreapp3.1\MovieTheaterPoster.AssemblyInfo.cs
+C:\GoodLine\MovieTheaterPoster\MovieTheaterPoster\obj\Debug\netcoreapp3.1\MovieTheaterPoster.csproj.CoreCompileInputs.cache
+C:\GoodLine\MovieTheaterPoster\MovieTheaterPoster\obj\Debug\netcoreapp3.1\MovieTheaterPoster.dll
+C:\GoodLine\MovieTheaterPoster\MovieTheaterPoster\obj\Debug\netcoreapp3.1\MovieTheaterPoster.pdb
+C:\GoodLine\MovieTheaterPoster\MovieTheaterPoster\obj\Debug\netcoreapp3.1\MovieTheaterPoster.genruntimeconfig.cache

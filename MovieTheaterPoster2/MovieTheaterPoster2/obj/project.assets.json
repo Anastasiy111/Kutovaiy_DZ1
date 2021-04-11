@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Anastasion\\source\\repos\\MovieTheaterPoster2\\MovieTheaterPoster2\\MovieTheaterPoster2.csproj",
+      "projectUniqueName": "C:\\GoodLine\\MovieTheaterPoster2\\MovieTheaterPoster2\\MovieTheaterPoster2.csproj",
       "projectName": "MovieTheaterPoster2",
-      "projectPath": "C:\\Users\\Anastasion\\source\\repos\\MovieTheaterPoster2\\MovieTheaterPoster2\\MovieTheaterPoster2.csproj",
+      "projectPath": "C:\\GoodLine\\MovieTheaterPoster2\\MovieTheaterPoster2\\MovieTheaterPoster2.csproj",
       "packagesPath": "C:\\Users\\Anastasion\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Anastasion\\source\\repos\\MovieTheaterPoster2\\MovieTheaterPoster2\\obj\\",
+      "outputPath": "C:\\GoodLine\\MovieTheaterPoster2\\MovieTheaterPoster2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Anastasion\\AppData\\Roaming\\NuGet\\NuGet.Config",

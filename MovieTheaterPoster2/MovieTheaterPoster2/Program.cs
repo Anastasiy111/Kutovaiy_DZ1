@@ -362,7 +362,7 @@ namespace MovieTheaterPoster
 
 
 
-        static public void AddMovie(List<Movie> movieList) //2 - Добавить новый фильм
+        static public void AddMovie(List<Movie> movieList, List<Hall> hallList) //2 - Добавить новый фильм
         {
             Console.Clear();
 
@@ -382,22 +382,7 @@ namespace MovieTheaterPoster
                 {
                     Console.Write("Введено недопустимое значение, попробуйте еще раз: ");
                 }
-            }
-
-            Console.Write("Введите название зала: ");
-            checkFlag = true;
-            while (checkFlag)
-            {
-                try
-                {
-                    nameHall = FirstUpper(Console.ReadLine());
-                    checkFlag = false;
-                }
-                catch (Exception)
-                {
-                    Console.Write("Введено недопустимое значение, попробуйте еще раз: ");
-                }
-            }
+            }        
 
             checkFlag = false;
             foreach (Movie name in movieList)
@@ -414,6 +399,31 @@ namespace MovieTheaterPoster
             }
             else
             {
+                Console.WriteLine("Выберите зал: ");
+                ConsoleKey key = ConsoleKey.Enter;
+                int count = 1;
+                foreach (Hall element in hallList)
+                {
+                    Console.WriteLine($"{count} - {element.NameHall}");
+                    count++;
+                }
+                do
+                {
+                    Console.Write("Номер зала: ");
+                    key = Console.ReadKey().Key;
+                    switch (key)
+                    {
+                        case ConsoleKey.D1:
+                            nameHall = hallList[0].NameHall;
+                            break;
+                        case ConsoleKey.D2:
+                            nameHall = hallList[1].NameHall;
+                            break;
+                        default: continue;
+                    }
+                    Console.WriteLine();
+                } while ((key != ConsoleKey.D1) && (key != ConsoleKey.D2));
+
                 Console.Write("Введите стоимость билета (в руб.): ");
                 while (!double.TryParse(Console.ReadLine(), out ticketPrice))
                 {
@@ -543,7 +553,7 @@ namespace MovieTheaterPoster
                         OutputListMovie(movieList);
                         break;
                     case ConsoleKey.D2:
-                        AddMovie(movieList);
+                        AddMovie(movieList, hallList);
                         break;
                     case ConsoleKey.D3:
                         DeleteMovie(movieList);

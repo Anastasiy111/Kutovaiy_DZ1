@@ -24,8 +24,9 @@ namespace MovieTheaterPoster
         static public void Chek(List<Movie> movieList, List<Hall> hallList) //9 - Чек
         {
             Console.Clear();
-            Dictionary<int, string > chek = new Dictionary<int, string>();
+            Dictionary<string,int> chek = new Dictionary<string, int>();
             string nameMovie = "";
+            int countTickets;
             do
             {
                 Console.WriteLine("Введите название фильма, билет на который хотите приобрести: ");
@@ -52,21 +53,34 @@ namespace MovieTheaterPoster
                     }
                 }
 
-                if (checkFlag == false)
+                if (!chek.ContainsKey(nameMovie))
                 {
-                    Console.Write("Такого фильма нет. Хотите ввести заново? (да - нажмите Enter, нет - нажмите на любую клавишу):");
+                    if (checkFlag == false)
+                    {
+                        Console.Write("Такого фильма нет. Хотите ввести заново? (да - нажмите Enter, нет - нажмите на любую клавишу):");
+                    }
+                    else
+                    {
+                        Console.Write("Введите количество белетов: ");
+                        while (!int.TryParse(Console.ReadLine(), out countTickets))
+                        {
+                            Console.Write("Ошибка! Введите заново количество белетов: ");
+                        }
+                        chek.Add(nameMovie, countTickets);
+                        Console.Write("Добавить еще фильм? (да - нажмите Enter, нет - нажмите на любую клавишу): ");
+                    }
                 }
                 else
                 {
-                    int countTickets;
                     Console.Write("Введите количество белетов: ");
                     while (!int.TryParse(Console.ReadLine(), out countTickets))
                     {
                         Console.Write("Ошибка! Введите заново количество белетов: ");
                     }
-                    chek.Add(countTickets, nameMovie);
+                    chek[nameMovie] += countTickets;
                     Console.Write("Добавить еще фильм? (да - нажмите Enter, нет - нажмите на любую клавишу): ");
                 }
+                
                 Console.WriteLine();
             } while (Console.ReadKey().Key == ConsoleKey.Enter);
 
@@ -74,22 +88,22 @@ namespace MovieTheaterPoster
 
             foreach (Movie element in movieList)
             {
-                foreach (KeyValuePair<int, string> key in chek)
+                foreach (KeyValuePair<string, int> key in chek)
                 {
-                    if (element.Name == key.Value)
+                    if (element.Name == key.Key)
                     {
-                        sum += element.Price * key.Key;
+                        sum += element.Price * key.Value;
                     }
                 }
                 
             }
 
-            int chekCountTickets = chek.Aggregate(0, (x,y) => y.Key >= 0 ? x+y.Key : x);
+            int chekCountTickets = chek.Aggregate(0, (x,y) => y.Value >= 0 ? x+y.Value : x);
 
             Console.Clear();
             Console.WriteLine("Чек: ");
             Console.WriteLine();
-            foreach (KeyValuePair<int, string> element in chek)
+            foreach (KeyValuePair<string, int> element in chek)
             {
                 Console.WriteLine($"Фильм: \t {element.Key}");
                 Console.WriteLine($"Количество билетов: {element.Value}");
@@ -110,29 +124,43 @@ namespace MovieTheaterPoster
         {
             Console.Clear();
             string nameHall = "";
-            Console.Write("Введите название зала: ");
             bool checkFlag = true;
-            while (checkFlag)
-            {
-                try
-                {
-                    nameHall = FirstUpper(Console.ReadLine());
-                    checkFlag = false;
-                }
-                catch (Exception)
-                {
-                    Console.Write("Введено недопустимое значение, попробуйте еще раз: ");
-                }
-            }
 
+            Console.WriteLine("Выберите зал: ");
+            ConsoleKey key = ConsoleKey.Enter;
+            int count = 1;
             foreach (Hall element in hallList)
             {
-                if (element.NameHall == nameHall)
-                {
-                    checkFlag = true;
-                    break;
-                }
+                Console.WriteLine($"{count} - {element.NameHall}");
+                count++;
             }
+            count = 0;
+            do
+            {
+                Console.WriteLine();
+                if (count == 0)
+                {
+                    Console.Write("Номер зала: ");
+                    count++;
+                }
+                else
+                {
+                    Console.WriteLine("Ошибка! Такого зала не существует. ");
+                    Console.Write("Номер зала: ");
+                }                
+                key = Console.ReadKey().Key;
+                switch (key)
+                {
+                    case ConsoleKey.D1:
+                        nameHall = hallList[0].NameHall;
+                        break;
+                    case ConsoleKey.D2:
+                        nameHall = hallList[1].NameHall;
+                        break;
+                    default: continue;
+                }
+                Console.WriteLine();
+            } while ((key != ConsoleKey.D1) && (key != ConsoleKey.D2));
 
             if (checkFlag == false)
             {
@@ -140,13 +168,14 @@ namespace MovieTheaterPoster
             }
             else 
             {
-                var s = movieList.GroupBy(x => x.NameHall);
+                var sortHall = movieList.GroupBy(x => x.NameHall);
 
-                foreach (IGrouping<string, Movie> element in s)
+                foreach (IGrouping<string, Movie> element in sortHall)
                 {
                     if (element.Key == nameHall)
                     {
-                        Console.WriteLine();
+                        Console.Clear();
+                        Console.WriteLine(nameHall);
                         foreach (var t in element)
                         {
                             Console.WriteLine($"Фильм: {t.Name} - {t.Price} руб.");
@@ -163,8 +192,8 @@ namespace MovieTheaterPoster
         static public string[] listMenuSortPrice =
         {
             "Меню:",
-            "1 - Сортировка по цене (убывание)",
-            "2 - Сортировка по цене (возрастание)",
+            "1 - Сортировка по цене билета (убывание)",
+            "2 - Сортировка по цене билета (возрастание)",
             "0 - Вернуться в основаное меню"
         };
 
@@ -399,6 +428,7 @@ namespace MovieTheaterPoster
             }
             else
             {
+                
                 Console.WriteLine("Выберите зал: ");
                 ConsoleKey key = ConsoleKey.Enter;
                 int count = 1;
@@ -409,6 +439,7 @@ namespace MovieTheaterPoster
                 }
                 do
                 {
+                    Console.WriteLine();
                     Console.Write("Номер зала: ");
                     key = Console.ReadKey().Key;
                     switch (key)
@@ -581,6 +612,10 @@ namespace MovieTheaterPoster
 
 
             } while (key != ConsoleKey.D0);
+
+            Console.WriteLine();
+            Console.WriteLine("До свидания!");
+            Console.WriteLine();
 
         }
     }

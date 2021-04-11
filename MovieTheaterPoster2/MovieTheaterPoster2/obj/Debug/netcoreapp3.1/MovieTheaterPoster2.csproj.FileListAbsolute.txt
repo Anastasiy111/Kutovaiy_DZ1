@@ -1,0 +1,13 @@
+C:\Users\Anastasion\source\repos\MovieTheaterPoster2\MovieTheaterPoster2\bin\Debug\netcoreapp3.1\MovieTheaterPoster2.exe
+C:\Users\Anastasion\source\repos\MovieTheaterPoster2\MovieTheaterPoster2\bin\Debug\netcoreapp3.1\MovieTheaterPoster2.deps.json
+C:\Users\Anastasion\source\repos\MovieTheaterPoster2\MovieTheaterPoster2\bin\Debug\netcoreapp3.1\MovieTheaterPoster2.runtimeconfig.json
+C:\Users\Anastasion\source\repos\MovieTheaterPoster2\MovieTheaterPoster2\bin\Debug\netcoreapp3.1\MovieTheaterPoster2.runtimeconfig.dev.json
+C:\Users\Anastasion\source\repos\MovieTheaterPoster2\MovieTheaterPoster2\bin\Debug\netcoreapp3.1\MovieTheaterPoster2.dll
+C:\Users\Anastasion\source\repos\MovieTheaterPoster2\MovieTheaterPoster2\bin\Debug\netcoreapp3.1\MovieTheaterPoster2.pdb
+C:\Users\Anastasion\source\repos\MovieTheaterPoster2\MovieTheaterPoster2\obj\Debug\netcoreapp3.1\MovieTheaterPoster2.AssemblyInfoInputs.cache
+C:\Users\Anastasion\source\repos\MovieTheaterPoster2\MovieTheaterPoster2\obj\Debug\netcoreapp3.1\MovieTheaterPoster2.AssemblyInfo.cs
+C:\Users\Anastasion\source\repos\MovieTheaterPoster2\MovieTheaterPoster2\obj\Debug\netcoreapp3.1\MovieTheaterPoster2.csproj.CoreCompileInputs.cache
+C:\Users\Anastasion\source\repos\MovieTheaterPoster2\MovieTheaterPoster2\obj\Debug\netcoreapp3.1\MovieTheaterPoster2.dll
+C:\Users\Anastasion\source\repos\MovieTheaterPoster2\MovieTheaterPoster2\obj\Debug\netcoreapp3.1\MovieTheaterPoster2.pdb
+C:\Users\Anastasion\source\repos\MovieTheaterPoster2\MovieTheaterPoster2\obj\Debug\netcoreapp3.1\MovieTheaterPoster2.genruntimeconfig.cache
+C:\Users\Anastasion\source\repos\MovieTheaterPoster2\MovieTheaterPoster2\obj\Debug\netcoreapp3.1\MovieTheaterPoster2.csprojAssemblyReference.cache
